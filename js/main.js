@@ -1,55 +1,62 @@
 import { app as r } from "../../../scripts/app.js";
-import { defineComponent as m, ref as i, onMounted as f, onBeforeUnmount as c, createElementBlock as p, openBlock as d, normalizeClass as v, createElementVNode as u } from "vue";
-const b = /* @__PURE__ */ m({
+import { defineComponent as m, ref as s, watch as c, onMounted as p, onBeforeUnmount as d, createElementBlock as v, openBlock as b, createElementVNode as f } from "vue";
+const _ = /* @__PURE__ */ m({
   __name: "App",
-  setup(a) {
-    const e = i();
-    i();
-    const t = i(), l = i(!1), o = i(null);
-    return f(async () => {
-      e.value && (o.value = new MutationObserver((s) => {
-        s.forEach((n) => {
-          n.type === "attributes" && n.attributeName === "maximized" && (l.value = n.target.getAttribute("maximized") === "true");
+  setup(l) {
+    const e = s(), o = s(), i = s(!1), a = s(null), u = () => {
+      var n;
+      if ((n = e.value) != null && n.parentElement) {
+        const t = e.value.parentElement;
+        i.value ? t.classList.remove("h-full") : t.classList.add("h-full");
+      }
+    };
+    return c(i, () => {
+      u();
+    }), p(async () => {
+      e.value && (u(), a.value = new MutationObserver((n) => {
+        n.forEach((t) => {
+          t.type === "attributes" && t.attributeName === "maximized" && (i.value = t.target.getAttribute("maximized") === "true");
         });
-      }), o.value.observe(e.value, {
+      }), a.value.observe(e.value, {
         attributes: !0,
         attributeFilter: ["maximized"]
       }));
-    }), c(() => {
-      o.value && (o.value.disconnect(), o.value = null);
-    }), (s, n) => (d(), p("div", {
+    }), d(() => {
+      var n;
+      (n = e.value) != null && n.parentElement && e.value.parentElement.classList.remove("h-full"), a.value && (a.value.disconnect(), a.value = null);
+    }), (n, t) => (b(), v("div", {
       ref_key: "viewerContentRef",
       ref: e,
-      class: v(["flex w-full", [l.value ? "h-full" : "h-[70vh]"]])
+      class: "flex w-full h-full"
     }, [
-      u("div", {
+      f("div", {
         ref_key: "mainContentRef",
-        ref: t,
+        ref: o,
         class: "flex-1 relative"
-      }, n[0] || (n[0] = [
-        u("iframe", {
+      }, t[0] || (t[0] = [
+        f("iframe", {
           src: "/stablestudio",
           class: "demo-iframe h-full w-full"
         }, null, -1)
       ]), 512)
-    ], 2));
+    ], 512));
   }
-}), _ = (a, e) => {
-  const t = a.__vccOpts || a;
-  for (const [l, o] of e)
-    t[l] = o;
-  return t;
-}, g = /* @__PURE__ */ _(b, [["__scopeId", "data-v-36025d5e"]]), { ComfyButton: x } = window.comfyAPI.button;
+}), g = (l, e) => {
+  const o = l.__vccOpts || l;
+  for (const [i, a] of e)
+    o[i] = a;
+  return o;
+}, w = /* @__PURE__ */ g(_, [["__scopeId", "data-v-ef73331c"]]), { ComfyButton: x } = window.comfyAPI.button;
 r.registerExtension({
   name: "ComfyUI.StableStudio.TopMenu",
   setup() {
     var e;
-    function a() {
-      var t;
-      (t = r.extensionManager) == null || t.dialog.showExtensionDialog({
+    function l() {
+      var o;
+      (o = r.extensionManager) == null || o.dialog.showExtensionDialog({
         key: "global-stablestudio",
         title: "ComfyUI StableStudio",
-        component: g,
+        component: w,
         dialogComponentProps: {
           style: "width: 80vw; height: 80vh;",
           maximizable: !0
@@ -61,7 +68,7 @@ r.registerExtension({
         icon: "image",
         tooltip: "comfyui-stablestudio",
         content: "StableStudio",
-        action: a
+        action: l
       })
     );
   }
